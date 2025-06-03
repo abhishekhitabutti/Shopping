@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping Cart</title>
+    <style>
+        .cart {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <div class="cart-item">
+            <span>Item 1</span>
+            <span>$10</span>
+            <button onclick="removeItem(this)">Remove</button>
+        </div>
+        <div class="cart-item">
+            <span
