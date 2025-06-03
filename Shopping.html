@@ -179,7 +179,7 @@
             margin: 2rem 0;
         }
 
-        .products h2 {
+        .products h3 {
             text-align: center;
             margin-bottom: 3rem;
             font-size: 2.5rem;
@@ -679,7 +679,7 @@
             if (cart.length === 0) {
                 cartItems.innerHTML = '<div class="empty-cart">Your cart is empty</div>';
                 cartTotal.style.display = 'none';
-            } else {
+            }  else {
                 cartItems.innerHTML = cart.map(item => `
                     <div class="cart-item">
                         <div class="cart-item-info">
@@ -734,14 +734,14 @@
             }, 3000);
         }
 
-        // Close cart when clicking outside
+        
         document.getElementById('cartModal').addEventListener('click', function(e) {
             if (e.target === this) {
                 toggleCart();
             }
         });
 
-        // Search on Enter key
+      
         document.getElementById('searchInput').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 searchProducts();
